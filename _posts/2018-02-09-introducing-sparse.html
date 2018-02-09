@@ -1,0 +1,22 @@
+---
+title: Introducing Sparse
+layout: post
+---
+
+The state of sparse arrays in Python isn't exactly the finest. The current best library is <a
+        href="https://docs.scipy.org/doc/scipy/reference/sparse.html"><code>scipy.sparse</code></a>, but it has some
+poor design decisions that make it less than optimal for regular use, all of which boil down to the following two
+limitations in the end.
+
+<ul>
+    <li>It's limited to two dimensions.</li>
+    <li>It follows the <code>numpy.matrix</code> interface, rather than <code>numpy.ndarray</code></li>
+</ul>
+
+We have designed sparse in order to sidestep these two limitations. Although it isn't as complete as
+<code>scipy.sparse</code>, we are working on it, and hope to make it the de-facto sparse array library for Python.
+
+The project is open source with the permissible BSD License, and can be found at our <a
+        href="https://github.com/pydata/sparse">GitHub repository</a>. Feel free to contribute.
+
+The documentation can also be found at <a href="https://sparse.pydata.org">sparse.pydata.org</a>.

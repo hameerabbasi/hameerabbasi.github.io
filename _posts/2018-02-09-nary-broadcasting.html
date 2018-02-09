@@ -1,0 +1,16 @@
+---
+title: N-ary Broadcasting in Sparse
+layout: post
+---
+
+So far, broadcasting in <a href="https://sparse.pydata.org">Sparse</a> has been limited to two operands. This weekend,
+I'll be working on N-ary broadcasting, which will help in implementing the <a
+        href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.where.html">three-argument version of <code>numpy.where</code></a>.
+
+This is one of the features needed for <a href="http://xarray.pydata.org/">XArray</a> integration (see <a
+        href="https://github.com/pydata/sparse/issues/1">this GitHub issue</a>). Coming up after that:
+
+<ul>
+    <li>Arbitrary fill-values.</li>
+    <li><code>NaN</code>-skipping aggregations</li>
+</ul>
