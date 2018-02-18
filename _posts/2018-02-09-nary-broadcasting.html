@@ -3,14 +3,21 @@ title: N-ary Broadcasting in Sparse
 layout: post
 ---
 
-So far, broadcasting in <a href="https://sparse.pydata.org">Sparse</a> has been limited to two operands. This weekend,
-I'll be working on N-ary broadcasting, which will help in implementing the <a
-        href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.where.html">three-argument version of <code>numpy.where</code></a>.
+<p>So far, broadcasting in <a href="https://sparse.pydata.org">Sparse</a> has been limited to two operands. This
+    weekend,
+    I'll be working on N-ary broadcasting, which will help in implementing the <a
+            href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.where.html">three-argument version of
+        <code>numpy.where</code></a>.</p>
 
-This is one of the features needed for <a href="http://xarray.pydata.org/">XArray</a> integration (see <a
-        href="https://github.com/pydata/sparse/issues/1">this GitHub issue</a>). Coming up after that:
+<p>This is one of the features needed for <a href="http://xarray.pydata.org/">XArray</a> integration (see <a
+        href="https://github.com/pydata/sparse/issues/1">this GitHub issue</a>). Coming up after that:</p>
 
 <ul>
     <li>Arbitrary fill-values.</li>
     <li><code>NaN</code>-skipping aggregations</li>
 </ul>
+
+<p><strong>Update (18 Feb):</strong> It seems that N-ary broadcasting is now in a fairly stable state and will land soon. Follow
+    the discussion over at <a href="https://github.com/pydata/sparse/pull/98">this pull request</a> for progress. I'm
+    sorry for the delay compared to what I may have originally implied earlier, but this was a much more complex problem
+    than what I had originally envisioned and I only work on this project on weekends in my free time.</p>
