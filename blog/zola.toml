@@ -1,0 +1,25 @@
+# The URL the site will be built for
+base_url = "https://hameerabbasi.github.io"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+# Visual theme
+theme = "apollo"
+taxonomies = [{ name = "tags" }]
+
+[markdown]
+
+[markdown.highlighting]
+theme = "catppuccin-mocha"
+
+[extra]
+theme = "auto"
+socials = [
+  { name = "github", url = "https://github.com/hameerabbasi/", icon = "github" },
+]
+menu = []
+use_cdn = false
